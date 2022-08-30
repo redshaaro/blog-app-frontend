@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault(); 
     try{
       seterror(false)
-    const res = await axios.post('/auth/register',{
+    const res = await axios.post('https://simple-node-server-niru.herokuapp.com/auth/register',{
       username,email,password
     });
     console.log(res)
