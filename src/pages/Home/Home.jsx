@@ -13,7 +13,7 @@ const Home = () => {
   const {search} = useLocation();
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search);
+      const res = await axios.get("https://simple-node-server-niru.herokuapp.com/posts" + search);
       setPosts(res.data)
     };
     fetchPosts();
